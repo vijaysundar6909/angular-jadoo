@@ -1,0 +1,32 @@
+            <!-- ======= Selling ======= -->
+            <section class="selling">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-12 aos" data-aos="fade-up" data-aos-duration="1000">
+                      <div class="section-header text-center">
+                        <span>Top Selling</span>
+                        <h2>Top Destinations</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row justify-content-center">
+                    <div class="col-lg-4  col-md-6 col-12 aos" data-aos="fade-right" *ngFor="let data of selling">
+                      <div class="destinations">
+                       <div class="destinations-main">
+                        <div class="destinations-image">
+                          <img class="img-fluid" alt="image" [src]="data.img">
+                        </div>
+                        <div class="destinations-content">
+                          <div class="serv-info">
+                            <p>{{data.place}}</p>
+                            <span>${{data.price}}</span>
+                          </div>
+                          <p><i class="fa-solid fa-location-arrow"></i> {{data.trip}}</p>
+                        </div>
+                      </div>
+                       </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+                    <!-- ======= Selling ======= -->

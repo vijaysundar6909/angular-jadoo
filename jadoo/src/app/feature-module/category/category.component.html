@@ -1,0 +1,25 @@
+    <!-- ======= Category ======= -->
+    <section class="category-main">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 aos" data-aos="fade-up" data-aos-duration="1000">
+              <div class="section-header text-center">
+                <span>CATEGORY</span>
+                <h2>We Offer Best Services</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-12 aos" data-aos="fade-up" data-aos-duration="1500" *ngFor="let data of category">
+              <div class="services-main text-center">
+                <img [src]="data.img" alt="image" class="img-fluid">
+                <div class="rect-box"></div>
+                <h6>{{data.head}}</h6>
+                <p>{{data.para}}</p>
+              </div>
+            </div>
+         
+          </div>
+        </div>
+      </section>
+        <!-- ======= Category ======= -->
